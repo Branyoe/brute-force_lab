@@ -2,7 +2,6 @@ const express = require('express');
 const ejs = require('ejs');
 const session = require('express-session');
 const path = require('path');
-const noCacheMiddleware = require('./middlewares/logout');
 
 const app = express();
 

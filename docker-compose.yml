@@ -1,0 +1,18 @@
+services:
+  attacked:
+    container_name: attacked
+    build:
+      context: .
+      dockerfile: dockerfile-attacked
+    ports:
+      - "3000:3000"
+    stdin_open: true
+
+  attacker:
+    container_name: attacker
+    build:
+      context: .
+      dockerfile: dockerfile-attacker
+    volumes:
+      - ./dictionarys:/dictionarys
+    stdin_open: true

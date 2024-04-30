@@ -1,0 +1,6 @@
+FROM ubuntu
+
+# Instalar dependencias y herramientas necesarias
+RUN apt-get update && \
+  apt-get install -y hydra && \
+  mkdir /dictionarys
