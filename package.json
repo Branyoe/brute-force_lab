@@ -1,11 +1,12 @@
 {
-  "name": "vuln-login",
+  "name": "brute-force_lab",
   "version": "1.0.0",
-  "description": "vulnerable login to brute forze",
+  "description": "vulnerable brute force login",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node --watch --env-file .env index.js"
+    "dev": "node --watch --env-file .env index.js",
+    "start": "node --env-file .env index.js"
   },
   "author": "Brandon Yoel Hernández Ascencio",
   "license": "ISC",

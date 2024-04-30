@@ -14,5 +14,5 @@ services:
       context: .
       dockerfile: dockerfile-attacker
     volumes:
-      - ./dictionarys:/dictionarys
+      - ./dictionaries:/dictionaries
     stdin_open: true
